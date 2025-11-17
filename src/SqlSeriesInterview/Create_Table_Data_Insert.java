@@ -11,6 +11,19 @@ public class Create_Table_Data_Insert {
             try {
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Sql_Server","root","Rah&&950*/");
 
+                    //HikariConfig config = new HikariConfig();
+// config.setJdbcUrl("jdbc:mysql://localhost:3306/testdb");
+// config.setUsername("root");
+// config.setPassword("password");
+
+// HikariDataSource ds = new HikariDataSource(config);
+// Connection con = ds.getConnection();
+
+     // Use:
+// High-traffic applications
+// Spring Boot (default HikariCP
+
+
 
                 // Insert Course
                 String insertCourse = "INSERT INTO course(course_name) VALUES (?)";
